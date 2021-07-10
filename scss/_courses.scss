@@ -1,0 +1,32 @@
+.courses {
+    padding: 4rem;
+    text-align: center;
+    h2 {
+        margin-bottom: 2rem;
+    }
+    &__cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .button--skills {
+            display: none;
+        }
+    }
+    &__card {
+        border-radius: 1rem;
+        margin: 1rem;
+        padding: 1rem;
+        box-shadow: $shadow;
+        -webkit-box-shadow: $shadow;
+        -moz-box-shadow: $shadow;
+        .progress {
+            transition: width 2s;
+        }
+        #progress {
+            transition-timing-function: ease-in;
+        }
+    }
+    &__card:hover {
+        transform: scale(1.05);
+    }
+}

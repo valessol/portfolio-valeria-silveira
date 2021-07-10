@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valeria Silveira | Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preload" href="./css/normalize.css" as="style">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="preload" href="./css/style.css" as="style">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header class="header gradient">
+
+        <nav class="navbar navbar-expand-lg navbar-light nav gradient">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"></a>
+              <button class="navbar-toggler nav__button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-code-plus" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M9 12h6" />
+                    <path d="M12 9v6" />
+                    <path d="M6 19a2 2 0 0 1 -2 -2v-4l-1 -1l1 -1v-4a2 2 0 0 1 2 -2" />
+                    <path d="M18 19a2 2 0 0 0 2 -2v-4l1 -1l-1 -1v-4a2 2 0 0 0 -2 -2" />
+                </svg></span>
+              </button>
+              <div class="collapse navbar-collapse nav__links" id="navbarNav">
+                <ul class="navbar-nav nav__links--rigth">
+                  <li>
+                      <a class="nav-link nav__link" aria-current="page" href="#">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link nav__link" href="#projects">Proyectos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link nav__link" href="#about">Sobre Mi</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link nav__link" href="#skills">Skills</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link nav__link" href="./pages/courses.html">Cursos Realizados</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link nav__link" href="#contact">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          
+        <div class="container header__content">
+            <img class="header__img" src="./img/img-2.svg" alt="Yo, Valeria">
+            <div class="header__text">
+                <h1 class="header__title">Hola, soy Valeria</h1>
+                <div class="header__par">
+                    <p>Soy ingeniera química, pero desde Agosto de 2020 he orientado mis estudios al área del diseño y la programación. Me interesa especializarme en las áreas del diseño UX/UI y el desarrollo de páginas y aplicaciones web.</p>
+                    <p>¿Quieres conocerme un poco más?</p>
+                    <a class="button" href="#about">¡Vamos!</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    
+
+    <main class="projects container" id="projects">
+        <h2 class="projects__title primary">Proyectos</h2>
+        <div class="projects__container">
+            <div class="projects__container--content">
+                <h3 class="projects__title color-aux1">Photoshop e Illustrator</h3>
+                <img class="projects__img" src="./img/img-3.png" alt="Proyecto Photoshop e Illustrator VS Design">
+                <p class="projects__par">Diseño de identidad visual de marca para <span>VS Design</span>, con definición de paleta de colores en función del mensaje que se busca transmitir, así como de tipografías, logo y mockups. Incluye Manual de marca.</p>
+                <a class="button" href="https://www.behance.net/gallery/105854839/Branding-VS-Design">Ver Proyecto</a>
+            </div>
+            <div class="projects__container--content">
+                <h3 class="projects__title color-aux1">Diseño UX/UI</h3>
+                <img class="projects__img" src="./img/img-4.jpg" alt="Proyecto Diseño UX/UI Cash App">
+                <p class="projects__par"><span>Ca$h App</span> es una aplicación colaborativa, que permite a los usuarios de cajeros automáticos pasar el menor tiempo posible en la fila del cajero, y que encuentren el dinero cuando lo necesiten.</p>
+                <a class="button" href="https://www.behance.net/gallery/111575879/CaSh-App-Diseno-UXUI">Ver Proyecto</a>
+            </div>
+            <div class="projects__container--content">
+                <h3 class="projects__title color-aux1">Desarrollo web</h3>
+                <img class="projects__img" src="./img/img-5.png" alt="Proyecto Desarrollo Web Decorarte Accesorios Impresos">
+                <p class="projects__par"><span>Decorarte Accesorios Impresos</span> es el desarrollo de la estructura de un sitio con tienda online, mediante herramientas HTML y CSS, con utilización de framework Bootstrap, SASS, GIT y Github.</p>
+                <a class="button" href="https://valessol.github.io/decorarte-accesorios/">Ver Proyecto</a>
+            </div>
+            <div class="projects__container--content" id="more-projects-1"></div>
+            <div class="projects__container--content" id="more-projects-2"></div>
+        </div>
+        <div id="more-projects-button">
+            <div class="button" onclick="expandir()">Ver más proyectos</div>
+        </div>
+    </main>
+
+    <section class="sobre-mi gradient" id="about">
+        <div class="container">
+            <h2 class="sobre-mi__title white">Sobre Mí</h2>
+            <div class="sobre-mi__content">
+                <img class="img-fluid" src="./img/img-1.jpg" alt="Yo, Valeria">
+                <div class="sobre-mi__par">
+                    <p>¡Hola! Soy Valeria, y aunque soy ingeniera química de profesión, la pandemia me ha permitido descubrir que existen otras áreas que me apasionan: el diseño y la programación. Es por eso que comencé a estudiar a partir de cursos que me permitieran la aplicación práctica de estos conocimientos.</p>
+                    <p>Comencé con la parte gráfica, aprendiendo del uso de herramientas como lo son Photoshop e Illustrator, y luego lleve ese conocimiento a la aplicación práctica para el desarrollo de una app que cumpliera con los criterios del diseño UX/UI.</p>
+                    <p>Continué el camino con el desarrollo de una página web, y ahí es donde me enamoré de la programación.</p>
+                    <p>Estoy en constante capacitación, me gusta mucho aprender y seguir desarrollando mis habilidades. Mi meta es reunir todos estos conocimientos, aplicarlos en el mundo laboral, y convertirme en una desarroladora UX/UI</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills container" id="skills">
+        <h2 class="primary">Skills</h2>
+        <div class="skills__content">
+            <a href="#" class="button--skills">Photoshop</a>
+            <a href="#" class="button--skills">Illustrator</a>
+            <a href="#" class="button--skills">HTML</a>
+            <a href="#" class="button--skills">CSS</a>
+            <a href="#" class="button--skills">Bootstrap</a>
+            <a href="#" class="button--skills">SASS/SCSS</a>
+            <a href="#" class="button--skills">Git</a>
+            <a href="#" class="button--skills">Github</a>
+            <a href="#" class="button--skills">Javascript</a>
+            <a href="#" class="button--skills">JQuery</a>
+            <a href="#" class="button--skills">Figma</a>
+            <a href="#" class="button--skills">Inglés Intermedio</a>
+        </div>
+    </section>
+
+    <section class="contact gradient" id="contact">
+        <div class="container">
+           <h2 class="white">¡Contactame!</h2> 
+           <div class="contact__content">
+               <div class="contact__item">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone-plus" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+                        <path d="M15 6h6m-3 -3v6" />
+                    </svg>
+                    <a href="https://wa.me/005491156551654/" class="contact__item--text white">+54 (9) 11-5655-1654</a>
+               </div>
+               <div class="contact__item">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-send" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <line x1="10" y1="14" x2="21" y2="3" />
+                        <path d="M21 3l-6.5 18a0.55 .55 0 0 1 -1 0l-3.5 -7l-7 -3.5a0.55 .55 0 0 1 0 -1l18 -6.5" />
+                    </svg>
+                    <a href="mailto:vsol.sil@gmail.com" class="contact__item--text white">vsol.sil@gmail.com</a>
+               </div>
+               <div class="contact__item">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <rect x="4" y="4" width="16" height="16" rx="2" />
+                        <line x1="8" y1="11" x2="8" y2="16" />
+                        <line x1="8" y1="8" x2="8" y2="8.01" />
+                        <line x1="12" y1="16" x2="12" y2="11" />
+                        <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+                    </svg>
+                    <a href="https://www.linkedin.com/in/valeriasilveira/" class="contact__item--text white">www.linkedin.com/in/<span>valeriasilveira</span> </a>
+                </div>
+           </div>
+        </div>
+
+    </section>
+
+    <footer class="footer_content gradient">
+        <div class="container">
+            <p class="white">Autor: Valeria Silveira - Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <script src="./js/HTMLfunctions.js"></script>
+    <script src="./js/events.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>

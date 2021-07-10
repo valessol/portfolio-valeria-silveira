@@ -1,0 +1,147 @@
+/* Main - projects */
+.projects {
+    padding: 3rem;
+    text-align: center;
+    &__container {
+        display: block;
+        margin: 0 auto;
+        width: 60%;
+        &--content {
+            margin-bottom: 5rem;
+        }
+    }
+    &__title {
+        margin-bottom: 2rem;
+    }
+    &__title:nth-child(3), 
+    &__title:nth-child(4) {
+        margin-top: 2rem;
+    }
+    &__img {
+        margin-bottom: 1rem;
+        border-radius: 50%;
+        width: 20rem;
+        height: 20rem;
+    }
+    &__par {
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+        span {
+            font-weight: bold;
+        }
+    }
+}
+
+#more-projects-1, #more-projects-2 {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .projects__container {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        width: 100%;
+        &--content {
+            width: 30%;
+        }
+    }
+}
+
+/* Section - About me */
+
+.sobre-mi {
+    text-align: center;
+    margin: 2rem 0;
+    padding: 3rem;
+    &__title {
+        margin-bottom: 2rem;
+    }
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        img {
+            margin-bottom: 2rem;
+            border-radius: 50%;
+            width: 30rem;
+            height: 30rem;
+        }
+    }
+    &__par {
+        font-size: 1.8rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .sobre-mi {
+        &__content {
+            flex-wrap: nowrap;
+        } 
+        &__par {
+            padding-left: 2rem;
+        }
+    }
+      
+}
+
+/*Section - Skills */
+
+.skills {
+    padding: 3rem;
+    text-align: center;
+    h2 {
+        margin-bottom: 2rem;
+    }
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.skills__content {
+    .button--skills {
+        min-width: max-content;
+    }
+    .button--skills:hover {
+        cursor: none;
+    }
+}
+
+/* Section - Contact*/
+
+.contact {
+    padding: 3rem 1rem;
+    text-align: center;
+    h2 {
+        margin-bottom: 2rem;
+    }
+    &__content {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        margin: 1rem;
+        
+        a {
+            text-decoration: none;
+            font-size: 2rem;
+            padding-left: 1rem;
+            word-wrap: break-word;
+        }
+    }
+}
+
+// @media (max-width: 480px) {
+//     .contact__item--text {
+//         span {
+//             display: block;
+//         }
+//     }
+// }
