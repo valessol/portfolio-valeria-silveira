@@ -1,0 +1,56 @@
+#leafs {
+    animation: leaf 2s ease-in-out infinite alternate;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+#smoke {
+    animation: smoke 3s linear infinite alternate;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#block1 {
+    animation: block 3s ease-in-out infinite;
+}
+#block2 {
+    animation: block 3s ease-in-out infinite 0.6s;
+}
+#block3 {
+    animation: block 3s ease-in-out infinite 1.2s;
+}
+#block4 {
+    animation: block 3s ease-in-out infinite 1.8s;
+}
+#block5 {
+    animation: block 3s ease-in-out infinite 2.4s;
+}
+
+@keyframes leaf {
+    from {
+        transform: rotateY(-15deg) rotateX(-5deg);
+    }
+    to {
+        transform: rotateY(15deg) rotateX(5deg);
+    }
+}
+
+@keyframes smoke {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+@keyframes block {
+    from {
+        transform: translateY(10px);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+}
