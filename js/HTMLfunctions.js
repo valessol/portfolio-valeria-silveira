@@ -15,5 +15,5 @@ const mostrar = () => {
 const ocultar = () => {
     $('#more-projects-1').css("display", "none");
     $('#more-projects-2').css("display", "none");
-    $('#more-projects-button').html(`<a href="#" class="button" onclick="expandir()">Ver más proyectos</a>`);
+    $('#more-projects-button').html(`<a href="javascript:void(0);" class="button" onclick="expandir()">Ver más proyectos</a>`);
 }
