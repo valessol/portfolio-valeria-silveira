@@ -3,7 +3,7 @@
     .nav {
         position: fixed;
         width: 100%;
-        z-index: 1;
+        z-index: 1000;
         .nav__button {
             border: none;
             color: transparent;
@@ -31,7 +31,6 @@
         align-items: center;
         padding-top: 6rem;
         padding-bottom: 1rem;
-        
     }
     &__img {
         width: 50%;
@@ -41,8 +40,9 @@
         text-align: center;
     }
     &__title {
-        font-size: 6rem;
-        margin-bottom: 2rem;
+        font-size: 5rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
         font-weight: 700;
     }
     &__par {
@@ -51,8 +51,25 @@
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 450px) {
     .header {
+        &__title {
+            font-size: 6rem;
+            margin-bottom: 2rem;
+            font-weight: 700;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    
+    .header {
+        .nav__links {
+            justify-content: flex-end;
+            .nav__link {
+                margin: 0 1rem;
+            }
+        }
         &__content {
             flex-direction: row;
         }
@@ -63,15 +80,6 @@
         &__par {
             padding: 0 2rem;
             font-size: 2rem;
-        }
-    }
-}
-
-@media (min-width: 992px) {
-    .nav__links {
-        justify-content: flex-end;
-        .nav__link {
-            margin: 0 1rem;
         }
     }
 }

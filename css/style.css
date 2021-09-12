@@ -13,6 +13,7 @@ body {
   font-size: 16px; }
 
 .container {
+  width: 100%;
   max-width: 120rem;
   margin: 0 auto; }
 
@@ -38,7 +39,7 @@ body {
 .button {
   display: inline-block;
   padding: 1rem 2rem;
-  border-radius: .5rem;
+  border-radius: 1rem;
   min-width: max-content; }
 
 .button:hover, .button--skills {
@@ -84,7 +85,7 @@ h3 {
   .header .nav {
     position: fixed;
     width: 100%;
-    z-index: 1; }
+    z-index: 1000; }
     .header .nav .nav__button {
       border: none;
       color: transparent; }
@@ -111,14 +112,25 @@ h3 {
     margin: 0 auto;
     text-align: center; }
   .header__title {
-    font-size: 6rem;
-    margin-bottom: 2rem;
+    font-size: 5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     font-weight: 700; }
   .header__par {
     padding: 0 3rem;
     font-size: 1.8rem; }
 
-@media (min-width: 768px) {
+@media (min-width: 450px) {
+  .header__title {
+    font-size: 6rem;
+    margin-bottom: 2rem;
+    font-weight: 700; } }
+
+@media (min-width: 992px) {
+  .header .nav__links {
+    justify-content: flex-end; }
+    .header .nav__links .nav__link {
+      margin: 0 1rem; }
   .header__content {
     flex-direction: row; }
   .header__title {
@@ -127,12 +139,6 @@ h3 {
   .header__par {
     padding: 0 2rem;
     font-size: 2rem; } }
-
-@media (min-width: 992px) {
-  .nav__links {
-    justify-content: flex-end; }
-    .nav__links .nav__link {
-      margin: 0 1rem; } }
 
 /******************** Header Animation ********************/
 #leafs {
@@ -189,28 +195,7 @@ h3 {
 /*********************** Index ************************/
 /* Main - projects */
 .projects {
-  padding: 3rem;
-  text-align: center; }
-  .projects__container {
-    display: block;
-    margin: 0 auto;
-    width: 60%; }
-    .projects__container--content {
-      margin-bottom: 5rem; }
-  .projects__title {
-    margin-bottom: 2rem; }
-  .projects__title:nth-child(3), .projects__title:nth-child(4) {
-    margin-top: 2rem; }
-  .projects__img {
-    margin-bottom: 1rem;
-    border-radius: 50%;
-    width: 20rem;
-    height: 20rem; }
-  .projects__par {
-    font-size: 1.8rem;
-    margin-bottom: 2rem; }
-    .projects__par span {
-      font-weight: bold; }
+  margin: 2rem 0; }
 
 #more-projects-1, #more-projects-2 {
   display: none; }
@@ -287,6 +272,121 @@ h3 {
       font-size: 2rem;
       padding-left: 1rem;
       word-wrap: break-word; }
+
+@media (max-width: 480px) {
+  .contact__item--text span {
+    display: block; } }
+
+/*********************** SwiperCards ************************/
+.swiper {
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 5px; }
+  .swiper .swipper-wrapper {
+    margin: 1rem; }
+  .swiper .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 90%;
+    max-width: 900px; }
+
+.projectCard {
+  height: auto;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 5rem;
+  background-color: #292928;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0.5rem 1rem rgba(83, 83, 83, 0.5); }
+  .projectCard__image {
+    width: 90%;
+    max-width: 200px;
+    height: 120px;
+    background-image: url("../img/laptop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative; }
+  .projectCard__site {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 65.5%;
+    height: 69%;
+    position: absolute;
+    top: 12%;
+    left: 19%; }
+  .projectCard__content {
+    width: 80%;
+    color: white;
+    text-align: center; }
+  .projectCard__title {
+    font-size: 2.2rem;
+    margin-bottom: 1rem; }
+  .projectCard__text {
+    font-size: 1.6rem;
+    font-weight: 300; }
+  .projectCard__skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: #292928; }
+    .projectCard__skills p {
+      background-color: #00c4cc;
+      padding: 0.2rem 1rem;
+      margin: 0.5rem;
+      border-radius: 0.5rem; }
+  .projectCard__btn {
+    margin: 1rem;
+    font-size: 1.6rem;
+    border-radius: 1rem; }
+
+.projectCard__site-1 {
+  background-image: url("../img/img1.jpg"); }
+
+.projectCard__site-2 {
+  background-image: url("../img/img2.jpg"); }
+
+.projectCard__site-3 {
+  background-image: url("../img/img3.jpg"); }
+
+.projectCard__site-4 {
+  background-image: url("../img/img4.jpg"); }
+
+@media (min-width: 420px) {
+  .swiper {
+    padding-bottom: 2rem; }
+  .projectCard__image {
+    max-width: 300px;
+    height: 180px; }
+  .projectCard__title {
+    font-size: 2.5rem; } }
+
+@media (min-width: 670px) {
+  .projectCard__image {
+    max-width: 500px;
+    height: 300px; }
+  .projectCard__text {
+    font-size: 1.8rem; } }
+
+@media (min-width: 992px) {
+  .projectCard {
+    height: 300px;
+    flex-direction: row; }
+    .projectCard__image {
+      width: 50%;
+      height: 100%;
+      background-size: contain; }
+    .projectCard__site {
+      width: 65%;
+      height: 58%;
+      top: 10%;
+      left: 18%; }
+    .projectCard__content {
+      width: 50%; }
+    .projectCard__title {
+      font-size: 3rem; } }
 
 /*********************** Courses *************************/
 .courses {

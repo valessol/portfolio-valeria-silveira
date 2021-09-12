@@ -16,6 +16,16 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <!-- <typewritten-text> -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@auroratide/typewritten-text/lib/style.css"
+    />
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
     <link rel="preload" href="./css/normalize.css" as="style" />
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="preload" href="./css/style.css" as="style" />
@@ -57,7 +67,8 @@
                 />
                 <path
                   d="M18 19a2 2 0 0 0 2 -2v-4l1 -1l-1 -1v-4a2 2 0 0 0 -2 -2"
-                /></svg>
+                />
+              </svg>
             </span>
           </button>
           <div class="collapse navbar-collapse nav__links" id="navbarNav">
@@ -90,8 +101,8 @@
       </nav>
 
       <div class="container header__content">
-        <!-- <img class="header__img" src="./img/img-2.svg" alt="Yo, Valeria"> -->
-        <svg class="header_img"
+        <svg
+          class="header_img"
           width="100%"
           height="298"
           viewBox="0 0 435 298"
@@ -1293,8 +1304,7 @@
           <h1 class="header__title">Hola, soy Valeria</h1>
           <div class="header__par">
             <p>
-              Soy ingeniera química, pero desde Agosto de 2020 he orientado mis
-              estudios al área del diseño y la programación. Me interesa
+              Soy ingeniera química en busca de un cambio en mi rubro profesional, y para ello he orientado mis estudios al área del diseño y la programación. Me interesa
               especializarme en las áreas del diseño de interfaces (UI) y el
               desarrollo de páginas y aplicaciones web.
             </p>
@@ -1305,69 +1315,100 @@
       </div>
     </header>
 
-    <main class="projects container" id="projects">
+    <!-- PROYECTOS -->    
+    <main class="text-center projects" id="projects">
       <h2 class="projects__title primary">Proyectos</h2>
-      <div class="projects__container">
-        <div class="projects__container--content">
-          <h3 class="projects__title color-aux1">Photoshop e Illustrator</h3>
-          <img
-            class="projects__img"
-            src="./img/img-3.png"
-            alt="Proyecto Photoshop e Illustrator VS Design"
-          />
-          <p class="projects__par">
-            Diseño de identidad visual de marca para <span>VS Design</span>, con
-            definición de paleta de colores en función del mensaje que se busca
-            transmitir, así como de tipografías, logo y mockups. Incluye Manual
-            de marca.
-          </p>
-          <a
-            class="button"
-            href="https://www.behance.net/gallery/105854839/Branding-VS-Design"
-            >Ver Proyecto</a
-          >
+      <div class="swiper mySwiper">
+        <!-- card -->
+        <div class="swiper-wrapper">
+          <!-- CARD 1 -->
+          <div class="swiper-slide">
+            <div class="projectCard">
+              <div class="projectCard__image">
+                <div class="projectCard__site projectCard__site-1"></div>
+              </div>
+              <div class="projectCard__content">
+                <h3 class="projectCard__title">Decorarte Accesorios Impresos</h3>
+                <p class="projectCard__text">Maquetado de sitio web con tienda online, como parte del proyecto final del curso de Desarrollo Web.</p>
+                <div class="projectCard__skills">
+                  <p>#<strong>html5</strong></p>
+                  <p>#<strong>css3</strong></p>
+                  <p>#<strong>bootstrap</strong></p>
+                  <p>#<strong>SASS</strong></p>
+                  <p>#<strong>git</strong></p>
+                  <p>#<strong>GitHub</strong></p>
+                </div>
+                <a href="https://valessol.github.io/decorarte-accesorios/" class="projectCard__btn btn button">Ver sitio</a>
+              </div>
+            </div>
+          </div><!--Fin CARD-->
+          <!-- CARD 2 -->
+          <div class="swiper-slide">
+            <div class="projectCard">
+              <div class="projectCard__image">
+                <div class="projectCard__site projectCard__site-2"></div>
+              </div>
+              <div class="projectCard__content">
+                <h3 class="projectCard__title">GitHub User Search</h3>
+                <p class="projectCard__text">
+                  Como parte de uno de los challenges de <strong>Frontend Mentor</strong>, esta app permite acceder a información de usuarios de Github, modificando el DOM mediante el acceso a la API.
+                </p>
+                <div class="projectCard__skills">
+                  <p>#<strong>javascript</strong></p>
+                  <p>#<strong>html5</strong></p>
+                  <p>#<strong>css3</strong></p>
+                  <p>#<strong>SASS</strong></p>
+                  <p>#<strong>git</strong></p>
+                  <p>#<strong>GitHub</strong></p>
+                </div>
+                <a href="https://valessol.github.io/github-user-search-app/" class="projectCard__btn btn button">Ver sitio</a>
+              </div>
+            </div>
+          </div><!--Fin CARD-->
+          <!-- CARD 3 -->
+          <div class="swiper-slide">
+            <div class="projectCard">
+              <div class="projectCard__image">
+                <div class="projectCard__site  projectCard__site-3"></div>
+              </div>
+              <div class="projectCard__content">
+                <h3 class="projectCard__title">Ca$h App</h3>
+                <p class="projectCard__text">
+                  Diseño UX/UI de una aplicación colaborativa, que permite a
+            los usuarios de cajeros automáticos optimizar el tiempo en la fila y asegurar que encuentren el dinero cuando lo necesiten.
+                </p>
+                <div class="projectCard__skills">
+                  <p>#<strong>Photoshop</strong></p>
+                  <p>#<strong>Illustrator</strong></p>
+                  <p>#<strong>Figma</strong></p>
+                  <p>#<strong>Whimsical</strong></p>
+                  <p>#<strong>Optimal Workshop</strong></p>
+                </div>
+                <a href="https://www.behance.net/gallery/111575879/CaSh-App-Diseno-UXUI" class="projectCard__btn btn button">Ver proyecto</a>
+              </div>
+            </div>
+          </div><!--Fin CARD-->
+          <!-- CARD 4 -->
+          <div class="swiper-slide">
+            <div class="projectCard">
+              <div class="projectCard__image">
+                <div class="projectCard__site  projectCard__site-4"></div>
+              </div>
+              <div class="projectCard__content">
+                <h3 class="projectCard__title">VS Design</h3>
+                <p class="projectCard__text">
+                  Diseño de identidad visual de una marca ficticia, definiendo su paleta de colores en función de su tono de comunicación y valores, así como de tipografías, logo y mockups. Incluye Manual de marca.
+                </p>
+                <div class="projectCard__skills">
+                  <p>#<strong>Photoshop</strong></p>
+                  <p>#<strong>Illustrator</strong></p>
+                </div>
+                <a href="https://www.behance.net/gallery/105854839/Branding-VS-Design" class="projectCard__btn btn button">Ver proyecto</a>
+              </div>
+            </div>
+          </div><!--Fin CARD-->
         </div>
-        <div class="projects__container--content">
-          <h3 class="projects__title color-aux1">Diseño UX/UI</h3>
-          <img
-            class="projects__img"
-            src="./img/img-4.jpg"
-            alt="Proyecto Diseño UX/UI Cash App"
-          />
-          <p class="projects__par">
-            <span>Ca$h App</span> es una aplicación colaborativa, que permite a
-            los usuarios de cajeros automáticos pasar el menor tiempo posible en
-            la fila del cajero, y que encuentren el dinero cuando lo necesiten.
-          </p>
-          <a
-            class="button"
-            href="https://www.behance.net/gallery/111575879/CaSh-App-Diseno-UXUI"
-            >Ver Proyecto</a
-          >
-        </div>
-        <div class="projects__container--content">
-          <h3 class="projects__title color-aux1">Desarrollo web</h3>
-          <img
-            class="projects__img"
-            src="./img/img-5.png"
-            alt="Proyecto Desarrollo Web Decorarte Accesorios Impresos"
-          />
-          <p class="projects__par">
-            <span>Decorarte Accesorios Impresos</span> es el desarrollo de la
-            estructura de un sitio con tienda online, mediante herramientas HTML
-            y CSS, con utilización de framework Bootstrap, SASS, GIT y Github.
-          </p>
-          <a
-            class="button"
-            href="https://valessol.github.io/decorarte-accesorios/"
-            >Ver Proyecto</a
-          >
-        </div>
-        <div class="projects__container--content" id="more-projects-1"></div>
-        <div class="projects__container--content" id="more-projects-2"></div>
-      </div>
-      <div id="more-projects-button">
-        <div class="button" onclick="expandir()">Ver más proyectos</div>
+        <!-- <div class="swiper-pagination none"></div> -->
       </div>
     </main>
 
@@ -1533,5 +1574,31 @@
       integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
       crossorigin="anonymous"
     ></script>
+    <!-- <typewritten-text> -->
+    <script
+      type="module"
+      src="https://unpkg.com/@auroratide/typewritten-text/lib/define.js"
+    ></script>
+    <!-- swiper -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script type="module">
+      import Swiper from 'https://unpkg.com/swiper@7/swiper-bundle.esm.browser.min.js'
+      const swiper = new Swiper(".mySwiper", {
+          effect: "coverflow",
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: "auto",
+          coverflowEffect: {
+            rotate: 20,
+            stretch: 0,
+            depth: 200,
+            modifier: 1,
+            slideShadows: true,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+          },
+      });
+    </script>
   </body>
 </html>

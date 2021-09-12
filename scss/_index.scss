@@ -1,35 +1,6 @@
 /* Main - projects */
 .projects {
-    padding: 3rem;
-    text-align: center;
-    &__container {
-        display: block;
-        margin: 0 auto;
-        width: 60%;
-        &--content {
-            margin-bottom: 5rem;
-        }
-    }
-    &__title {
-        margin-bottom: 2rem;
-    }
-    &__title:nth-child(3), 
-    &__title:nth-child(4) {
-        margin-top: 2rem;
-    }
-    &__img {
-        margin-bottom: 1rem;
-        border-radius: 50%;
-        width: 20rem;
-        height: 20rem;
-    }
-    &__par {
-        font-size: 1.8rem;
-        margin-bottom: 2rem;
-        span {
-            font-weight: bold;
-        }
-    }
+    margin: 2rem 0;
 }
 
 #more-projects-1, #more-projects-2 {
@@ -138,10 +109,10 @@
     }
 }
 
-// @media (max-width: 480px) {
-//     .contact__item--text {
-//         span {
-//             display: block;
-//         }
-//     }
-// }
+@media (max-width: 480px) {
+    .contact__item--text {
+        span {
+            display: block;
+        }
+    }
+}
