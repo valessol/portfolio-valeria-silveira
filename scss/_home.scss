@@ -1,0 +1,20 @@
+.bodyHome{
+    height: 100vh;
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.headerHome {
+    text-align: center;
+    font-size: 3rem;
+    &__text {
+        --typewritten-text_cursor-width: 0.25rem;
+        --typewriten-text_cursor-interval: 1500ms
+    }
+}
+.homeTitle {
+    font-size: 2.4rem;
+    font-weight: 400;
+}

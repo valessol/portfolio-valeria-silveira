@@ -25,9 +25,19 @@
     padding: 1rem 2rem;
     border-radius: 1rem;
     min-width: max-content;
+    &--home{
+        display: block;
+        padding: 3rem;
+        margin-top: 3rem;
+        font-size: 2rem;
+    }
 }
 
-.button:hover, .button--skills {
+.button:hover {
+    background-color: $secondary-light;
+    color: $white;
+}
+.button--skills {
     background-image: $gradient;
     color: $white;
 }
@@ -40,7 +50,7 @@
 }
 
 .button:hover, .button--skills:hover {
-    transform: scale(1.05);
+    transform: scale(0.95);
 }
 
 /*Titulos*/ 
@@ -52,4 +62,11 @@ h2 {
 
 h3 {
     font-size: 2rem;
+}
+
+@media (min-width: 481px) {
+    .button--home {
+        display: inline-block;
+        margin: 3rem;
+    }
 }

@@ -1,6 +1,10 @@
 /****************** Variables ****************/
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap");
 /******************** Globales ******************************/
+* {
+  margin: 0;
+  padding: 0; }
+
 html {
   font-size: 62.5%;
   box-sizing: border-box; }
@@ -41,8 +45,17 @@ body {
   padding: 1rem 2rem;
   border-radius: 1rem;
   min-width: max-content; }
+  .button--home {
+    display: block;
+    padding: 3rem;
+    margin-top: 3rem;
+    font-size: 2rem; }
 
-.button:hover, .button--skills {
+.button:hover {
+  background-color: #555555;
+  color: #fff; }
+
+.button--skills {
   background-image: linear-gradient(45deg, #00c4cc 5%, #7c2ae8 95%);
   color: #fff; }
 
@@ -53,7 +66,7 @@ body {
   width: 18rem; }
 
 .button:hover, .button--skills:hover {
-  transform: scale(1.05); }
+  transform: scale(0.95); }
 
 /*Titulos*/
 h2 {
@@ -62,6 +75,11 @@ h2 {
 
 h3 {
   font-size: 2rem; }
+
+@media (min-width: 481px) {
+  .button--home {
+    display: inline-block;
+    margin: 3rem; } }
 
 /******************** Utilidades ******************/
 .white {
@@ -78,6 +96,30 @@ h3 {
 
 .gradient {
   background-image: linear-gradient(45deg, #00c4cc 5%, #7c2ae8 95%); }
+
+.center {
+  margin: 0 auto; }
+
+/******************** Home ********************/
+.bodyHome {
+  height: 100vh;
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+.headerHome {
+  text-align: center;
+  font-size: 3rem; }
+  .headerHome__text {
+    --typewritten-text_cursor-width: 0.25rem;
+    --typewriten-text_cursor-interval: 1500ms
+    ; }
+
+.homeTitle {
+  font-size: 2.4rem;
+  font-weight: 400; }
 
 /******************** Header ********************/
 .header {
